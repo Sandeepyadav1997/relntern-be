@@ -58,4 +58,11 @@ public class TaskController {
         taskService.deleteTask(id);
     }
     
+  //  @GetMapping("/getInternDetailById/{id}")
+  //   public List<Task> getInternDetailById(@PathVariable int id) {
+  //       System.out.println(id);
+  //       return taskService.getTaskById(id);
+  //   }
+  //    
+    
 }

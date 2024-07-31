@@ -1,17 +1,12 @@
 package com.reIntern.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.reIntern.model.Task;
 import com.reIntern.model.upload;
 import com.reIntern.service.UploadService;
 
@@ -28,9 +23,9 @@ public class UploadController {
 		return uploadService.uploadDocument(upload);
 	}
 	
-	@GetMapping("/getInternDocument/{id}")
-	public List<upload> getDocumentByInternId(@PathVariable int id) {
-		return uploadService.getDocumentByInternId(id);
-	}
+//	@GetMapping("/getInternDocument/{id}")
+//	public List<upload> getDocumentByInternId(@PathVariable int id) {
+//		return uploadService.getDocumentByInternId(id);
+//	}
 
 }
